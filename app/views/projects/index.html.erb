@@ -1,0 +1,33 @@
+  <script>
+    const NavSidebarSymbole = document.getElementById("nav-not-dropped")
+    const NavDroppedSidebarSymbole = document.getElementById("nav-dropped")
+
+  </script>
+
+    <% exampleDepartment = ['Peru', 'Brazil', 'Columbia', 'Peru', 'Black forrest'] %>
+  <div id="department-headers">
+    <h1>Department:</h1>
+    <%# <h3><%= current_user.departments_id.name </h3> %>
+    <h2 style="margin-left: 60px;"><%=  exampleDepartment.sample %></h2>
+  </div>
+
+  <div id="fetch-div">
+    <div id="inside-fetch-div">
+      <h3>Start here:</h3>
+      <button>Search</button>
+    </div>
+  </div>
+
+    <%= render :partial => 'shared/bg-images' %>
+  </body>
+  <%= render :partial => 'shared/footer' %>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>

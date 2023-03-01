@@ -1,0 +1,159 @@
+#about-sec-1 {
+  height: fit-content;
+  position: relative;
+}
+.about-header-img{
+  width: 100%;
+
+}
+#welcome-header{
+  display: flex;
+  justify-content: center;
+}
+#welcome-header h1{
+  position: absolute;
+  color: #F9F0E1;
+  width: fit-content;
+  margin: 60px auto;
+  filter: drop-shadow(3px 3px 5px #303E34);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+}
+#welcome-header h3{
+  position: absolute;
+  color: #F9F0E1;
+  width: 70%;
+  margin: 200px auto;
+  filter: drop-shadow(3px 3px 5px #303E34);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  transition-delay: 200ms;
+  font-size: 1.8rem;
+}
+#get-started-btn{
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  border-radius: 3px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.7rem;
+  padding: 20px 50px;
+  background-color: #F9F0E1;
+}
+#get-started-btn:active{
+box-shadow: inset 0px 0px 4px 4px rgb(83, 83, 83);
+
+}
+#about-sec-2{
+  display: flex;
+  justify-content: space-around;
+  margin: 95px 20px;
+}
+@media only screen and (max-width: 740px) {
+  #about-sec-2 {
+    display:block;
+    margin: 40px 20px;
+  }
+  .about-card{
+    margin: 40px auto;
+  }
+}
+#about-sec-3{
+  position: relative;
+}
+.sat-img{
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.about-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-card p{
+  width: 80%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+
+/* scolling effect  */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 1s;
+  }
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.card-img:nth-child(1){
+  transition-delay: 0ms;
+}
+.card-img:nth-child(2){
+  transition-delay: 400ms;
+}
+.card-img:nth-child(3){
+  transition-delay: 1800ms;
+}
+
+.about-card:nth-child(1){
+  transition-delay: 100ms;
+}
+.about-card p:nth-child(2){
+  transition-delay: 300ms;
+}
+.about-card p:nth-child(3){
+  transition-delay: 5000ms;
+}
+
+
+/* wave  */
+.custom-shape-divider-bottom-1676245033 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1676245033 svg {
+    position: relative;
+    display: block;
+    width: calc(190% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-bottom-1676245033 .shape-fill {
+    fill: #FFFF;
+}
+/* wave 2  */
+.custom-shape-divider-top-1676245463 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1676245463 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-top-1676245463 .shape-fill {
+    fill: #FFFF;
+}
