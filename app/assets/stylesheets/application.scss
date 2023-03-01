@@ -14,3 +14,14 @@
 
 @import "projects/index";
 @import "projects/show";
+
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  background-color: #F5F5F5;
+}
+body{
+  margin-top: 90px;
+  margin-bottom: 300px;
+}
