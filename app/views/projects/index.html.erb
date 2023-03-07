@@ -3,13 +3,25 @@
     const NavDroppedSidebarSymbole = document.getElementById("nav-dropped")
 
   </script>
-
+<section>
     <% exampleDepartment = ['Peru', 'Brazil', 'Columbia', 'Peru', 'Black forrest'] %>
   <div id="department-headers">
     <h1>Department:</h1>
     <%# <h3><%= current_user.departments_id.name </h3> %>
     <h2 style="margin-left: 60px;"><%=  exampleDepartment.sample %></h2>
   </div>
+
+  <% if current_user.projects.any? %>
+    <% current_user.projects.each do |project| %>
+      <div id="projects-list">
+        <p><%= project.name %></p>
+        <p><%= project.description %></p>
+      <% end %>
+      </div>
+    <% else %>
+      <p>This department has no projects yet.</p>
+  <% end %>
+
 
   <div id="fetch-div">
     <div id="inside-fetch-div">
@@ -20,7 +32,7 @@
 
     <%= render :partial => 'shared/bg-images' %>
   </body>
-  <%= render :partial => 'shared/footer' %>
+    <%= render :partial => 'shared/footer' %>
 
   <script>
     function w3_open() {
@@ -31,3 +43,4 @@
       document.getElementById("mySidebar").style.display = "none";
     }
   </script>
+</section>

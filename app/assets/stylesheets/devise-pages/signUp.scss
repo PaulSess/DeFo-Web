@@ -1,0 +1,31 @@
+.container{
+  width: fit-content;
+  margin-top: 10%;
+  border: solid #C9BC9B 10px;
+  border-radius: 10px;
+  background-color: #C9BC9B;
+}
+.login-header{
+  width: fit-content;
+  margin: 10px 60% 10px auto;
+}
+.login-input{
+  background-color: #F5F5F5;
+  border-radius:5px;
+  border:none;
+  height: 30px;
+}
+.field{
+  margin: 10px auto;
+  width: fit-content;
+
+}
+.actions{
+  width: 188px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #958c73;
+  border-radius: 5px;
+}

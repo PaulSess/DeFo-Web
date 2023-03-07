@@ -1,0 +1,37 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: $main-green;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+.nav-link{
+  position: relative;
+}
+.door-in{
+  position:absolute;
+  top:13px;
+  left: -20px;
+}
+.navbar-nav{
+  margin-right: 40px;
+}
+.login-p{
+  margin-left: 3px;
+}
+@media only screen and (max-width: 575px) {
+  .dissapear-in-collapse {
+    display: none;
+  }
+  .door-in{
+    left: -3px;
+  }
+  .login-p{
+    margin-left: 20px;
+  }
+}

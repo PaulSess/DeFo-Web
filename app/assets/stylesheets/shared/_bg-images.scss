@@ -1,0 +1,41 @@
+.bg-images{
+  width: 100%;
+  position: absolute;
+  // bottom: 0;
+  // right: 1px;
+  top: 38%;
+  opacity: 70%;
+  // border: red solid 1px;
+  height: fit-content;
+  // background-position: bottom;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+}
+.bg-forest{
+  width: 40%;
+  float: right;
+  margin-right: 20px;
+}
+.bg-fire{
+  width: 32.3%;
+  float: left;
+
+}
+// .bg-images{
+//   width: 100%;
+//   position: fixed;
+//   bottom: 0;
+//   right: 1px;
+//   z-index: -1;
+//   opacity: 70%;
+//   height: fit-content;
+// }
+// .bg-forest{
+//   width: 50%;
+//   float: right;
+//   margin-right: 20px;
+// }
+// .bg-fire{
+//   width: 40.3%;
+//   float: left;
+// }

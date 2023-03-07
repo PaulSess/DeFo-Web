@@ -4,7 +4,6 @@
 }
 .about-header-img{
   width: 100%;
-
 }
 #welcome-header{
   display: flex;
@@ -134,7 +133,7 @@ box-shadow: inset 0px 0px 4px 4px rgb(83, 83, 83);
 }
 
 .custom-shape-divider-bottom-1676245033 .shape-fill {
-    fill: #FFFF;
+    fill: $bg-white;
 }
 /* wave 2  */
 .custom-shape-divider-top-1676245463 {
@@ -155,5 +154,5 @@ box-shadow: inset 0px 0px 4px 4px rgb(83, 83, 83);
 }
 
 .custom-shape-divider-top-1676245463 .shape-fill {
-    fill: #FFFF;
+    fill: $bg-white;
 }

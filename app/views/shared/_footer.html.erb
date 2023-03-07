@@ -1,0 +1,80 @@
+<%# <footer> %>
+  <%# <div class="half-width">
+    <%= link_to root_path do %>
+        <%# <%= image_tag("deforestation-word-logo.png", { :class => "footer-logo" }) %>
+    <%# <% end %>
+  <%# </div> %>
+
+  <%# <div class="half-width">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#ContactModal"><h2 class="contact-us">Contact us</h2></a>
+  </div> %>
+<%# </footer> %>
+
+<footer>
+  <div class="container">
+    <div class="row h-75">
+      <div class="col">
+        <%= link_to root_path, { :style => "border-bottom: solid 1px white; padding-bottom: 34px;" } do %>
+          <%= image_tag("deforestation-word-logo.png", { :class => "footer-logo" }) %>
+        <% end %>
+      </div>
+      <div class="col">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#ContactModal"><h2 class="contact-us">Contact us</h2></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#ContactModal"><p id="contact-text">If there are any issues appearing, feel always free to reach out to us and tell us about the problem.<br>
+        <span style="font-weight:bold; padding: 5px 10px; font-size: 18px;">Contact us</span><i class="fa-solid fa-envelope"></i></p></a>
+      </div>
+    </div>
+    <div class="row h-25">
+      <div class="col">
+        Here will be more information in the footer Lorem ipsum dolor sit amet consectetur adipisicptatem earum accusamus culpa exercitationem obcaecati, nobis eligendi, similique. @
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+ <%# the modal  %>
+<div class="modal fade" id="ContactModal" tabindex="-1" data-bs-keyboard="false" data-bs-backdrop="static" role="dialog" aria-labelledby="ContactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header ContactModalBackground">
+        <h3 class="modal-title" id="ContactModalLabel">Contact form</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body ContactModalBackground">
+
+        <form
+          action="https://formspree.io/f/xbjegjaz"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <label class="d-block">
+            Your email:<br>
+            <input type="email" name="email">
+          </label>
+          <label style="width:100%;">
+            Your message:<br>
+            <textarea name="message"></textarea>
+          </label>
+          <label>
+            Feel free to add a screenshot or anything that might helps:
+            <input type="file" name="upload">
+          </label>
+          <button class="modal-send-button" type="submit">Send</button>
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <h5>Thank you for your message!</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
