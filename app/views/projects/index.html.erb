@@ -4,31 +4,29 @@
 
   </script>
 <section>
-    <% exampleDepartment = ['Peru', 'Brazil', 'Columbia', 'Peru', 'Black forrest'] %>
   <div id="department-headers">
     <h1>Department:</h1>
-    <%# <h3><%= current_user.departments_id.name </h3> %>
-    <h2 style="margin-left: 60px;"><%=  exampleDepartment.sample %></h2>
+    <h2 id="department-name-indexpage"><%= current_user.department.name %></h2>
   </div>
 
-  <% if current_user.projects.any? %>
-    <% current_user.projects.each do |project| %>
-      <div id="projects-list">
-        <p><%= project.name %></p>
-        <p><%= project.description %></p>
+  <% if current_user.department.projects.any? %>
+    <div class="projects">
+      <% @projects.each do |project| %>
+          <div class="projects-list">
+            <img class="projectimg-projectindex" src="https://cdn.kimkim.com/files/a/images/10f1c1f8782ab6fb7f437c320d01748ef5ef497f/big-73b9c967455ce92655e6288753936249.jpg" alt="">
+          <%# <%= link_to 'here', project_show_path(project.id) %>
+          <%= link_to project.name, project_path(project.id) %>
+            <p style="text-decoration:underlined;"><%= project.name %></p>
+          <%# <% end %>
+            <p class="projectdecription-projectindex">"<%= project.description %>"</p>
+            <p><%= project.coordinates %></p>
+          </div>
       <% end %>
-      </div>
-    <% else %>
-      <p>This department has no projects yet.</p>
+  <% else %>
+    <h1 id="no-projects-text">This department has no projects yet.</h1>
   <% end %>
-
-
-  <div id="fetch-div">
-    <div id="inside-fetch-div">
-      <h3>Start here:</h3>
-      <button>Search</button>
     </div>
-  </div>
+
 
     <%= render :partial => 'shared/bg-images' %>
   </body>

@@ -14,6 +14,40 @@ section{
   font-family: 'Bebas Neue', cursive;
   font-size: 40px;
 }
+#no-projects-text{
+  width: fit-content;
+  margin: auto;
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(31, 31, 31);
+}
+#department-name-indexpage{
+  margin-left: 60px;
+}
+.projects{
+  width:100%;
+  height:fit-content;
+  display:flex;
+  justify-content: center;
+}
+.projects-list{
+  border:solid black 1px;
+  // background-color: rgba(255, 255, 255, 0.622);
+  background-color: #F9F0E1;
+  box-shadow: 0px 0px 2px grey;
+  border-radius: 10px;
+  padding-top: 15px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.projectimg-projectindex{
+  width:150px;
+  border-radius:10px;
+}
+.projectdecription-projectindex{
+  text-align: center;
+  width: 70%;
+}
 #fetch-div{
   background-color: rgba(255, 255, 255, 0.622);
   box-shadow: 0px 0px 2px grey;
