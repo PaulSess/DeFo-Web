@@ -9,6 +9,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    #this is net/http
     @project = current_user.department.projects.first
 
     url = URI.parse('https://deforestation-2f7jkaqqnq-ew.a.run.app/')
@@ -25,12 +26,13 @@ class ProjectsController < ApplicationController
       # handle the error
       puts "no connection"
     end
-
-
+# ----------
+    #this is faraday
     # conn = Faraday.new(url: 'https://deforestation-2f7jkaqqnq-ew.a.run.app/')
     # response = conn.get('/api/data')
     # parsed_response = JSON.parse(response.body)
     # puts parsed_response['data']
+    # ------------
 
     # @project = Project.find(params[:id])
   end
