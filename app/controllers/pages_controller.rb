@@ -21,12 +21,12 @@ class PagesController < ApplicationController
       bold: true,
       initials: 'JD'
     }
-
     if response.status == 200
       svg_content = response.body
       # Do something with the SVG content
     else
       # Handle error
     end
+    @profile_image_api = "https://api.dicebear.com/5.x/initials/svg?seed=<%= current_user.username %>&backgroundType=gradientLinear&backgroundColor=b2d22b,7e9c2e&backgroundRotation=120&fontFamily=Georgia"
   end
 end

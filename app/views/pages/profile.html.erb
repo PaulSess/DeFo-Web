@@ -1,5 +1,24 @@
+<section style="display:flex;">
+  <img src="https://api.dicebear.com/5.x/initials/svg?seed=<%= current_user.username %>&backgroundType=gradientLinear&backgroundColor=b2d22b,7e9c2e&backgroundRotation=120&fontFamily=Georgia"
+  alt="avatar"
+  style="width: 200px;"
+  />
+  <div class="profile-details">
+    <h3>Username:</h3>
+    <h3 class="userdetail"><%= current_user.username %></h3>
 
-<img src="https://api.dicebear.com/5.x/initials/svg?seed=<%= current_user.username %>"
-alt="avatar"
-style="width: 200px;"
-/>
+    <h3>Email-adress:</h3>
+    <h3 class="userdetail"><%= current_user.email %></h3>
+
+    <h3>Department:</h3>
+    <h3 class="userdetail"><%= current_user.department.name %></h3>
+  </div>
+</section>
+<style>
+.profile-details{
+  display: block;
+}
+.userdetail{
+  margin-left: 50px;
+}
+</style>
