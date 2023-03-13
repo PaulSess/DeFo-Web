@@ -19,12 +19,16 @@
   left: -20px;
 }
 .navbar-nav{
-  margin-right: 40px;
+  margin: auto 40px auto auto;
 }
 .login-p{
-  margin-left: 3px;
+  margin: auto;
 }
 @media only screen and (max-width: 575px) {
+  .navbar-nav{
+    margin: 0;
+  }
+
   .dissapear-in-collapse {
     display: none;
   }
