@@ -1,9 +1,9 @@
-section{
-  min-height: 100vh;
+.indexsection{
+  min-height: 79vh;
   margin: 0;
 }
 #department-headers{
-  margin: 100px 0 100px 15%;
+  margin: 100px 0 50px 15%;
   color: #9c9c9c;
 }
 #department-headers h1{
@@ -39,6 +39,13 @@ section{
   display:flex;
   flex-direction: column;
   align-items:center;
+}
+.project-name-link-indexpage{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: black;
+
 }
 .projectimg-projectindex{
   width:150px;
