@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   get "about", to: "pages#about"
   get "home", to: "pages#home"
-  
+  get "profile", to: "pages#profile"
+
   get 'projects/index'
   get 'projects/show'
 
