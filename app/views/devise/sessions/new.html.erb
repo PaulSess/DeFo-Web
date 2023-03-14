@@ -1,29 +1,30 @@
-<div class="devise-container">
-  <div class="logo-div">
-    <%= image_tag "deforestation-word-logo.png", style: 'width: 200px;' %>
+<section class="center-inside">
+  <div class="devise-container">
+    <div class="logo-div">
+      <%= image_tag "deforestation-word-logo.png", style: 'width: 200px;' %>
+    </div>
+
+    <h2>Log in</h2>
+      <p>or &nbsp;<%= render "devise/shared/links" %></p>
+
+    <%# <%= render "devise/shared/links" %>
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :email,
+                    required: false,
+                    autofocus: true,
+                    input_html: { autocomplete: "email", class:"login-input"  } %>
+        <%= f.input :password,
+                    required: false,
+                    input_html: { autocomplete: "current-password", class:"login-input", placeholder:"at least 6 digits" } %>
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      </div>
+
+      <div class="form-actions Loginform">
+        <%= f.button :submit, "Log in", class: 'Login-btn' %>
+      </div>
+    <% end %>
   </div>
-
-  <h2>Log in</h2>
-    <p>or &nbsp;<%= render "devise/shared/links" %></p>
-
-  <%# <%= render "devise/shared/links" %>
-  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="form-inputs">
-      <%= f.input :email,
-                  required: false,
-                  autofocus: true,
-                  input_html: { autocomplete: "email", class:"login-input"  } %>
-      <%= f.input :password,
-                  required: false,
-                  input_html: { autocomplete: "current-password", class:"login-input", placeholder:"at least 6 digits" } %>
-      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-    </div>
-
-    <div class="form-actions Loginform">
-      <%= f.button :submit, "Log in", class: 'Login-btn' %>
-    </div>
-  <% end %>
-</div>
-  <%= render :partial => 'shared/bg-images' %>
-
+    <%= render :partial => 'shared/bg-images' %>
+</section>
   <%# <%= render :partial => 'shared/navbar' %>
