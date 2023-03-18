@@ -3,7 +3,7 @@
     <div class="logo-div">
       <%= image_tag "deforestation-word-logo.png", style: 'width: 200px;margin: 10px auto' %>
     </div>
-    <h2>Sign Up</h2>
+    <h2><%= t(:SignUp) %></h2>
     <div class="d-flex">
     <p>or &nbsp;</p><%= render "devise/shared/links" %>
     </div>
@@ -38,7 +38,7 @@
       <%# </div> %>
 
       <div class="actions">
-        <%= f.submit "Sign up", style:"background-color:transparent;border:none;" %>
+        <%= f.submit t(:SignUp), style:"background-color:transparent;border:none;" %>
       </div>
     <% end %>
   </div>

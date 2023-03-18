@@ -53,8 +53,14 @@ en:
   contactForm: "Contact form"
   YourEmail: "Your email"
   YourMessage: "Your message"
-  Thanksforthemessage: "Feel free to add a screenshot or anything that might helps"
+  addFile: "Feel free to add a screenshot or anything that might helps"
   Send: "Send"
+  Thanksforthemessage: "Thank you for your feedback!"
+
+  Login: "Log in"
+  SignUp: "Sign Up"
+  password: "password"
+  passwordplaceholder: "at least 6 digits"
 
 es:
   hello: "Hola Mundo"
@@ -80,5 +86,11 @@ es:
   contactForm: "Formulario de contacto"
   YourEmail: "Tu correo electrónico"
   YourMessage: "Su mensaje"
-  Thanksforthemessage: "Siéntase libre de añadir una captura de pantalla o cualquier cosa que pueda ayudar a"
+  addFile: "Siéntase libre de añadir una captura de pantalla o cualquier cosa que pueda ayudar a"
   Send: "Enviar"
+  Thanksforthemessage: "Gracias por sus comentarios."
+
+  Login: "Conectarse"
+  SignUp: "Inscribirse"
+  password: "contraseña"
+  passwordplaceholder: "al menos 6 dígitos"
