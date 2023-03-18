@@ -12,6 +12,9 @@ gem "sprockets-rails"
 # faraday for the api
 gem 'faraday'
 
+#I18n translation gem
+gem 'rails-i18n', '~> 7.0.0'
+
 
 
 
