@@ -1,9 +1,9 @@
 <section id="about-sec-1">
   <div id="welcome-header">
-    <h1 class="hidden">Welcome to Deforestation</h1>
-    <h3 class="hidden">The platform to help the amazon. We track slash and burn and other illegal activities within your area to support your conservation work.</h3>
+    <h1 class="hidden"> <%= t(:abouth1) %> </h1>
+    <h3 class="hidden"> <%= t(:abouth3) %> </h3>
     <%= link_to  projects_index_path do %>
-      <button id="get-started-btn"><div id="get-started-btn-txt">Get Started!</div></button>
+      <button id="get-started-btn"><div id="get-started-btn-txt"><%= t(:aboutbtn) %></div></button>
     <% end %>
   </div>
   <%= image_tag("lingchor-cut.jpeg", class:"about-header-img") %>
@@ -21,18 +21,18 @@
   <section id="about-sec-2">
     <div class="about-card">
       <%= image_tag("satellite-cut.jpg", class:"hidden card-img sat-img") %>
-      <p class="hidden">We use satellite images to monitor the ground with unmatched accuracy. This allows us to identify potential problems or hazards, detect and document deforestation and protecting the environment.</p>
+      <p class="hidden"> <%= t(:aboutsatellitedescription) %> </p>
     </div>
 
     <div class="about-card">
       <%= image_tag("hossein-saberi-fire.jpg", class:"hidden card-img sat-img") %>
-      <p class="hidden">Our deep learning model evaluates satellite images to detect illegal activities like burning and slashing in the forest. This helps us identify and respond to environmental threats quickly and accurately.</p>
+      <p class="hidden"> <%= t(:aboutfiredescription) %> </p>
 
     </div>
 
     <div class="about-card">
       <%= image_tag("berend-leupen-monkey.jpg", class:"hidden card-img sat-img") %>
-      <p class="hidden">Our mission is to conserve nature and the environment for future generations by promoting sustainable development and protecting the natural environment.<br> We work with communities, using our technology and expertise to create a more sustainable world.</p>
+      <p class="hidden"> <%= t(:aboutnaturedescription) %> </p>
 
     </div>
   </section>
