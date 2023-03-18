@@ -38,6 +38,14 @@ en:
   aboutfiredescription: "Our deep learning model evaluates satellite images to detect illegal activities like burning and slashing in the forest. This helps us identify and respond to environmental threats quickly and accurately."
   aboutnaturedescription: "Our mission is to conserve nature and the environment for future generations by promoting sustainable development and protecting the natural environment. We work with communities, using our technology and expertise to create a more sustainable world."
 
+  navsignup: "SignUp"
+  navlogin: "Login"
+  english: "english"
+  spanish: "spanish"
+
+  department: "Department"
+  projectindexnoprojectsyet: "This department has no projects yet."
+
 es:
   hello: "Hola Mundo"
   abouth1: "Bienvenido a la deforestación"
@@ -46,3 +54,11 @@ es:
   aboutsatellitedescription: "Utilizamos imágenes por satélite para vigilar el terreno con una precisión inigualable. Esto nos permite identificar posibles problemas o peligros, detectar y documentar la deforestación y proteger el medio ambiente."
   aboutfiredescription: "Nuestro modelo de aprendizaje profundo evalúa imágenes de satélite para detectar actividades ilegales como quemas y talas en el bosque. Esto nos ayuda a identificar y responder a las amenazas medioambientales con rapidez y precisión."
   aboutnaturedescription: "Nuestra misión es conservar la naturaleza y el medio ambiente para las generaciones futuras promoviendo el desarrollo sostenible y protegiendo el entorno natural. Trabajamos con las comunidades, utilizando nuestra tecnología y experiencia para crear un mundo más sostenible."
+
+  navsignup: "Inscríbete"
+  navlogin: "Inicio de sesión"
+  english: "inglés"
+  spanish: "español"
+
+  department: "Departamento"
+  projectindexnoprojectsyet: "Este departamento aún no tiene proyectos."
