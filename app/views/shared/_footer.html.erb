@@ -19,14 +19,14 @@
         <% end %>
       </div>
       <div class="col">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#ContactModal"><h2 class="contact-us">Contact us</h2></a>
-        <a href="#" data-bs-toggle="modal" data-bs-target="#ContactModal"><p id="contact-text">If there are any issues appearing, feel always free to reach out to us and tell us about the problem.<br>
-        <span style="font-weight:bold; padding: 5px 10px; font-size: 18px;">Contact us</span><i class="fa-solid fa-envelope"></i></p></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#ContactModal"><h2 class="contact-us"><%= t(:Contactus) %></h2></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#ContactModal"><p id="contact-text"><%= t(:footerContactDescription) %><br>
+        <span style="font-weight:bold; padding: 5px 10px; font-size: 18px;"><%= t(:ContactusAt) %></span><i class="fa-solid fa-envelope"></i></p></a>
       </div>
     </div>
     <div class="row h-25">
       <div class="col">
-        © [2023] [Deforestation]. All rights reserved.
+        <%= t(:footerCopyRights) %>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header ContactModalBackground">
-        <h3 class="modal-title" id="ContactModalLabel">Contact form</h3>
+        <h3 class="modal-title" id="ContactModalLabel"><%= t(:contactForm) %></h3>
         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -53,18 +53,18 @@
           enctype="multipart/form-data"
         >
           <label class="d-block">
-            Your email:<br>
+            <%= t(:YourEmail) %>:<br>
             <input type="email" name="email">
           </label>
           <label style="width:100%;">
-            Your message:<br>
+            <%= t(:YourMessage) %>:<br>
             <textarea name="message"></textarea>
           </label>
           <label>
-            Feel free to add a screenshot or anything that might helps:
+            <%= t(:Thanksforthemessage) %>:
             <input type="file" name="upload">
           </label>
-          <button class="modal-send-button" type="submit">Send</button>
+          <button class="modal-send-button" type="submit"><%= t(:Send) %></button>
         </form>
 
       </div>

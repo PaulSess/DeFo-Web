@@ -46,6 +46,16 @@ en:
   department: "Department"
   projectindexnoprojectsyet: "This department has no projects yet."
 
+  footerCopyRights: "© [2023] [Deforestation]. All rights reserved."
+  footerContactDescription: "If there are any issues appearing, feel always free to reach out to us and tell us about the problem."
+  Contactus: "Contact us"
+  ContactusAt: "Contact us"
+  contactForm: "Contact form"
+  YourEmail: "Your email"
+  YourMessage: "Your message"
+  Thanksforthemessage: "Feel free to add a screenshot or anything that might helps"
+  Send: "Send"
+
 es:
   hello: "Hola Mundo"
   abouth1: "Bienvenido a la deforestación"
@@ -62,3 +72,13 @@ es:
 
   department: "Departamento"
   projectindexnoprojectsyet: "Este departamento aún no tiene proyectos."
+
+  footerCopyRights: "© [2023] [Deforestación]. Todos los derechos reservados."
+  footerContactDescription: "Si surge algún problema, no dudes en ponerte en contacto con nosotros."
+  Contactus: "Contacto"
+  ContactusAt: "Contáctenos en"
+  contactForm: "Formulario de contacto"
+  YourEmail: "Tu correo electrónico"
+  YourMessage: "Su mensaje"
+  Thanksforthemessage: "Siéntase libre de añadir una captura de pantalla o cualquier cosa que pueda ayudar a"
+  Send: "Enviar"
